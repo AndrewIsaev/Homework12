@@ -13,15 +13,14 @@
     <h1>Посты по запросу {{ key }}</h1>
 
     {% for post in posts %}
-    <div class="post">
-        <img src={{ post.pic }} width="100%" alt="">
-        <p>{{ post.content }}</p>
-    </div>
-    <hr>
+        <div class="post">
+            <img src={{ post.pic }} width="100%" alt="">
+            <p>{{ post.content }}</p>
+        </div>
+        <hr>
     {% endfor %}
 
-    <hr>
-    <a href="../../templates/post_form.html" class="button">Добавить пост</a>
+    <a href="/post" class="button">Добавить пост</a>
 
 </main>
 </body>
